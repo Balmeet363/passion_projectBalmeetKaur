@@ -1,0 +1,20 @@
+﻿
+@model Passion_Project.Models.Artist
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update @Model.ArtistName</h2>
+<a href="/Artist/List">Back to List</a>
+
+<form method="post" action="/Artist/Update/@Model.ArtistID">
+    <div class="inpfield"><span>Name:</span><input type="text" id="ArtistName" name="ArtistName" value="@Model.ArtistName" /></div>
+    <div class="inpfield"><span>DOB</span><input type="text" id="ArtistDOB" name="ArtistDOB" value="@Model.ArtistDOB" /></div>
+    <div class="inpfield"> <span>Email:</span><input type="text" id="ArtistEmail" name="ArtistEmail" value="@Model.ArtistEmail" /></div>
+    <div class="inpfield"><span>Contact:</span><input type="text" id="ArtistContact" name="ArtistContact" value="@Model.ArtistContact" /></div>
+    <div class="inpfield"><input type="submit" value="update Artist" /></div>
+</form>   
+
+
+<h2>Update</h2>
+
